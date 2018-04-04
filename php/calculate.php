@@ -16,7 +16,7 @@ $sizes = [
 ];
 
 //this operation apply the size coeficient to a base price of a selected metal
-$price=round($metals[$_POST["metal"]] * $sizes[$_POST["size"]]);
+$price=round_to_2dp($metals[$_POST["metal"]] * $sizes[$_POST["size"]]);
 $myRing=new stdClass();
 $myRing->price = $price;
 $myRing->metal=$_POST["metal"];
