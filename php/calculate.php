@@ -1,4 +1,10 @@
 <?php
+//*************************
+//AUTHOR: EDGARDO VILLAFANE
+//LAST VERSION: 4/5/2018
+//PROJECT: Wedding Rings Test
+//************************* 
+
 //array with the prices by metal. 
 //In real system must be a select from a DB table METALS
 $metals = [
@@ -16,7 +22,7 @@ $sizes = [
 ];
 
 //this operation apply the size coeficient to a base price of a selected metal
-$price=round_to_2dp($metals[$_POST["metal"]] * $sizes[$_POST["size"]]);
+$price=number_format(($metals[$_POST["metal"]] * $sizes[$_POST["size"]]),2);
 $myRing=new stdClass();
 $myRing->price = $price;
 $myRing->metal=$_POST["metal"];

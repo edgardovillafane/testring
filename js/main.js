@@ -1,3 +1,9 @@
+//*************************
+//AUTHOR: EDGARDO VILLAFANE
+//LAST VERSION: 4/5/2018
+//PROJECT: Wedding Rings Test
+//************************* 
+
 $( document ).ready(function() {
 
 //assign the change event to metal select    

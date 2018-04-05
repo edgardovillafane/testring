@@ -1,0 +1,11 @@
+/*************************
+AUTHOR: EDGARDO VILLAFANE
+LAST VERSION: 4/5/2018
+PROJECT: Wedding Rings Test
+*************************/
+
+/* resize the ring img size and center*/
+.ring-img{
+    width: 50%!important;
+    margin-left: 25%;
+}
