@@ -7,19 +7,19 @@
 
 //array with the prices by metal. 
 //In real system must be a select from a DB table METALS
-$metals = [
+$metals = array(
     "Palladium" => 150,
     "Gold" => 120,
     "Silver" => 100
-];
+);
 //array with the coeficient by size. I apply a rate to increase the price by size.
 //  In real system must be a select from a DB table SIZE
-$sizes = [
+$sizes = array(
     "K" => 1.3,
     "L" => 1.2,
     "M" => 1.1,
     "N" => 1
-];
+);
 
 //this operation apply the size coeficient to a base price of a selected metal
 $price=number_format(($metals[$_POST["metal"]] * $sizes[$_POST["size"]]),2);
